@@ -12,3 +12,7 @@ write_logs()
 read_logs()
 
 stream.create_stream()
+
+print(stream.__file__)
+print(stream.__package__)
+print(stream.__name__)
