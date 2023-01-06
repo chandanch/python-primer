@@ -5,7 +5,7 @@ import csv
 
 # writing data to CSV file
 # open the file using open() in write mode
-with open("orders.csv", "w") as csv_file:
+with open("orders.csv", "w", encoding="utf-8") as csv_file:
     # create an instance of csv writer to write to csv file
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["Id", "Value", "UserId", "TransactionId"])
@@ -17,4 +17,5 @@ with open("orders.csv", encoding="utf-8") as orders_file:
     # create an instance of csv reader, 
     # the reader is iterable and extracts each row from the csv file
     csv_reader = csv.reader(orders_file)
+    print(list(csv_reader))
     
