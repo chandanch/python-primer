@@ -21,3 +21,25 @@ pip install <package_name>~=2.3.*
 # Similarly we can install the latest compatible minor version version 
 pip install <package_name>~=2.*
 
+#################### pipenv Commands ###################
+
+# Install all dependencies
+pipenv install
+
+# Install a package
+pipenv install <package_name>
+
+# Uninstall a package
+pipenv uninstall <package_name>
+
+# Install all dependencies of a project i.e. install packages listed on Pipfile
+pipenv install
+
+# Update a package
+pipenv update <package_name>
+
+# Update all packages in a project
+pipenv update --outdated
+
+# List all dependencies of a package
+pipenv graph
