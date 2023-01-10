@@ -11,10 +11,10 @@
     Python comes with a module that provides the base for defining Abstract Base classes(ABC)
     and that module name is ABC.
     ABC works by decorating methods of the base class as abstract and then registering
-    concrete classes as implementations of the abstract base. 
+    concrete classes as implementations of the abstract base.
     A method becomes abstract when decorated with the keyword @abstractmethod
 """
-from abc import ABC, abstractmethod, abstractproperty
+from abc import ABC, abstractmethod
 
 
 class SoftwareApplication(ABC):
